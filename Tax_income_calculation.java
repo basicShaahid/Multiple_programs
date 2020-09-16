@@ -19,9 +19,7 @@ public class Tax_income_calculation {
             System.out.println(final_income);
 
 
-        } else {
-
-            if (status.equals("mfj") || status.equals("qw") && income <= 16700) {
+        } else if (status.equals("mfj") || status.equals("qw") && income <= 16700) {
 
                 double final_income = income - (income * 0.1);
                 System.out.println(final_income);
@@ -40,14 +38,15 @@ public class Tax_income_calculation {
                         double final_income = income - (income * 0.1);
                         System.out.println(final_income);
 
+                    }else{
+                        double final_income = income - (income * 0.15);
+                        System.out.println(final_income);
                     }
                 }
             }
 
-            double final_income = income - (income * 0.15);
-            System.out.println(final_income);
+
 
         }
 
     }
-}

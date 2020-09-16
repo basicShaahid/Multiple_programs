@@ -12,9 +12,9 @@ public class BMI_calculator {
 
             Scanner in1 = new Scanner(System.in);
             System.out.print("Enter your weight(kg): ");
-            double weight = in1.nextInt();
+            double weight = in1.nextDouble();
             System.out.print("Enter your height(m): ");
-            double height = in1.nextInt();
+            double height = in1.nextDouble();
 
             double BMI = weight/((height)*(height));
 
